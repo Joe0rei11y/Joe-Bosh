@@ -1,0 +1,5 @@
+check process InterviewTimer
+  with pidfile /var/vcap/sys/run/InterviewTimer/pid
+  start program "/var/vcap/jobs/InterviewTimer/bin/ctl start"
+  stop program "/var/vcap/jobs/InterviewTimer/bin/ctl stop"
+  group vcap
